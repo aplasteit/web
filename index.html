@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplasteit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Aplasteit</h1>
+        <nav>
+            <ul>
+                <li><a href="#descripcion">Descripción</a></li>
+                <li><a href="#clips">Clips</a></li>
+                <li><a href="#comentarios">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="descripcion">
+            <h2>Bienvenido a Aplasteit</h2>
+            <p>
+                This is the page of the aplasteits, where the only tactic is to just push without thinking twice about where the enemies are. <br>
+                هاد هي صفحة الناس اللي كيسحقو، فين الاستراتيجية غير تدفع بلا ما تفكر جوج مرات فين كاينين الأعداء.<br>
+                Esta es la pagina de los aplasteits, donde solo la tactica es solo pushear sin pensar dos veces donde se encuentran los enemigos.<br>
+                Это страница для «раздавителей», где единственная тактика — просто идти в атаку, не задумываясь дважды, где находятся враги.<br>
+            </p>
+        </section>
+
+        <!-- ======================================= -->
+        <!-- ==== SECCIÓN DE CLIPS MODIFICADA ==== -->
+        <!-- ======================================= -->
+        <section id="clips">
+            <h2>Highlights</h2>
+            
+            <div class="slider-wrapper">
+                
+                <button class="slider-btn" id="scroll-izq">&lt;</button>
+
+                <div class="galeria-container">
+                    
+                    <div class="galeria-clips">
+
+                        <div class="clip-item">
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/Rxk3rhWB59U" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="clip-item">
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/21mJVOQAjTY" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="clip-item">
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/52W6dJdqhPo" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="clip-item">
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/1YXo3nsez24" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="clip-item">
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/pdmYHyVrefQ" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                        <div class="clip-item">
+                            <iframe width="560" height="315" 
+                                src="https://www.youtube.com/embed/9jNi3nh3i2o" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>                       
+
+                    </div>
+                </div>
+                
+                <button class="slider-btn" id="scroll-der">&gt;</button>
+            </div>
+        </section>
+
+        <!-- ======================================= -->
+        <!-- ==== SECCIÓN DE COMENTARIOS (Sin cambios) ==== -->
+        <!-- ======================================= -->
+        <section id="comentarios">
+            <h2>Comments</h2>
+
+            <div class="lista-comentarios"> 
+                <!-- ... tus comentarios ... -->
+                <article class="comentario-item">
+                    <p class="comentario-autor">Plata</p>
+                    <p class="comentario-texto">Me habeis aplastado.</p>
+                </article>
+                <article class="comentario-item">
+                    <p class="comentario-autor">AnaG</p>
+                    <p class="comentario-texto">JODETE.</p>
+                </article>
+                <article class="comentario-item">
+                    <p class="comentario-autor">Aptolik</p>
+                    <p class="comentario-texto">I want to aplasteit with you pls.</p>
+                </article>
+            </div>
+
+            <div class="formulario-comentario">
+                <h3>Write your comment</h3>
+                <form>
+                    <div class="form-grupo">
+                        <label for="nombre">Твоё имя (nombre):</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="comentario">تعليق (Write your comment):</label>
+                        <textarea id="comentario" name="comentario" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Aplasteit. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- ======================================= -->
+    <!-- ==== SCRIPT PARA EL CARRUSEL (NUEVO) ==== -->
+    <!-- ======================================= -->
+    <script>
+        // Espera a que todo el HTML esté cargado
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Seleccionamos los elementos que necesitamos
+            const galeriaContainer = document.querySelector('.galeria-container');
+            const scrollDer = document.getElementById('scroll-der');
+            const scrollIzq = document.getElementById('scroll-izq');
+
+            // 2. Añadimos el "oidor" de evento al botón derecho
+            scrollDer.addEventListener('click', () => {
+                // Calcula cuánto se va a mover: el ancho visible del contenedor
+                const scrollAmount = galeriaContainer.clientWidth;
+                // Mueve el scroll hacia la derecha
+                galeriaContainer.scrollLeft += scrollAmount;
+            });
+
+            // 3. Añadimos el "oidor" de evento al botón izquierdo
+            scrollIzq.addEventListener('click', () => {
+                // Calcula cuánto se va a mover: el ancho visible del contenedor
+                const scrollAmount = galeriaContainer.clientWidth;
+                // Mueve el scroll hacia la izquierda
+                galeriaContainer.scrollLeft -= scrollAmount;
+            });
+        });
+    </script>
+
+</body>
+</html>
